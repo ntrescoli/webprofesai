@@ -1,0 +1,49 @@
+/* Paleta por defecto (Ubuntu 24.04 LTS) */
+:root, [data-theme="ubuntu"] {
+  --distro-bg: #380c0c;          /* Berenjena oscuro */
+  --distro-header: #2c001e;      /* Chocolate oscuro */
+  --distro-accent: #dd4814;      /* Rojo-anaranjado Vermillion */
+  --distro-accent-hover: #77216F;
+  --distro-text: #AEA79F;        /* Gris claro terminal */
+  --distro-border: #5E2750;      /* Borde berenjena */
+}
+
+/* Sabor Debian (Estilo Spiral Puro) */
+[data-theme="debian"] {
+  --distro-bg: #1a1a1a;          /* Negro antracita */
+  --distro-header: #0d0d0d;      /* Negro profundo */
+  --distro-accent: #d70a53;      /* El místico rojo/azul marino de Debian */
+  --distro-accent-hover: #b50744;
+  --distro-text: #e6e6e6;
+  --distro-border: #333333;
+}
+
+/* Sabor Linux Mint (Verde Elegante y Confortable) */
+[data-theme="linuxmint"] {
+  --distro-bg: #1b2224;          /* Gris oscuro azulado */
+  --distro-header: #151a1c;      /* Barra superior oscura */
+  --distro-accent: #87cf3e;      /* Verde Mint icónico */
+  --distro-accent-hover: #6eb02f;
+  --distro-text: #f0f0f0;
+  --distro-border: #2d373a;
+}
+
+/* Sabor Arch Linux (Minimalismo Técnico y Frío) */
+[data-theme="arch"] {
+  --distro-bg: #12181f;          /* Azul grisáceo muy oscuro */
+  --distro-header: #0c1015;      /* Cabecera oscura */
+  --distro-accent: #1793d1;      /* Azul Cyan de Arch */
+  --distro-accent-hover: #1377aa;
+  --distro-text: #f8f9fa;
+  --distro-border: #222d3a;
+}
+
+/* Sabor Windows CMD (Retro Técnico) */
+[data-theme="cmd"] {
+  --distro-bg: #0c0c0c;          /* El negro/gris oscuro oficial de la consola de Windows */
+  --distro-header: #171717;      /* Barra superior ligeramente más clara */
+  --distro-accent: #0078d7;      /* El azul clásico de Windows (Mención al BSOD / Selección) */
+  --distro-accent-hover: #005a9e;
+  --distro-text: #cccccc;        /* El gris claro por defecto del texto de CMD */
+  --distro-border: #2b2b2b;      /* Bordes sutiles de la ventana */
+}
