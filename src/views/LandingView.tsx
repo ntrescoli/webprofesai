@@ -1,9 +1,6 @@
-// import { TerminalWidget } from '../components/TerminalWidget';
-// 1. Importas el componente desde tu librería privada
-import { ReactTerminal } from 'terminal-simulator'; 
-
-// 2. ¡MUY IMPORTANTE! Importas los estilos para que la terminal no se vea rota
-import 'terminal-simulator/style.css';
+import { TerminalWidget } from '../components/TerminalWidget';
+// import { ReactTerminal } from 'terminal-simulator';
+// import 'terminal-simulator/style.css';
 
 interface LandingViewProps {
   onLogin: () => void;
@@ -52,8 +49,8 @@ export const LandingView = ({ onLogin }: LandingViewProps) => {
           </p>
         </div>
 
-        {/* <TerminalWidget user="guest" /> */}
-        <ReactTerminal />
+        <TerminalWidget user="guest" />
+        {/* <ReactTerminal /> */}
       </main>
 
     </div>
