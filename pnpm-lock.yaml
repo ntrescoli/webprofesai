@@ -12,14 +12,14 @@ importers:
         specifier: ^2.106.1
         version: 2.107.0
       react:
-        specifier: ^19.2.6
-        version: 19.2.6
+        specifier: ^19.2.7
+        version: 19.2.7
       react-dom:
-        specifier: ^19.2.6
-        version: 19.2.6(react@19.2.6)
+        specifier: ^19.2.7
+        version: 19.2.7(react@19.2.7)
       terminal-simulator:
         specifier: github:ntrescoli/terminalsimulator
-        version: git+https://git@github.com:ntrescoli/terminalsimulator.git#42ada39232aad36c7a123f3e044492ade382c1fa(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        version: git+https://git@github.com:ntrescoli/terminalsimulator.git#fd33707145b6e2ad3832700a7dad83bad9eb2c39(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -815,13 +815,13 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.2.6:
-    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.6
+      react: ^19.2.7
 
-  react@19.2.6:
-    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
+  react@19.2.7:
+    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
     engines: {node: '>=0.10.0'}
 
   rolldown@1.0.2:
@@ -853,9 +853,10 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
-  terminal-simulator@git+https://git@github.com:ntrescoli/terminalsimulator.git#42ada39232aad36c7a123f3e044492ade382c1fa:
-    resolution: {commit: 42ada39232aad36c7a123f3e044492ade382c1fa, repo: git@github.com:ntrescoli/terminalsimulator.git, type: git}
-    version: 1.0.0
+  terminal-simulator@git+https://git@github.com:ntrescoli/terminalsimulator.git#fd33707145b6e2ad3832700a7dad83bad9eb2c39:
+    resolution: {commit: fd33707145b6e2ad3832700a7dad83bad9eb2c39, repo: git@github.com:ntrescoli/terminalsimulator.git, type: git}
+    version: 1.0.1
+    engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -1690,12 +1691,12 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.2.6(react@19.2.6):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
-      react: 19.2.6
+      react: 19.2.7
       scheduler: 0.27.0
 
-  react@19.2.6: {}
+  react@19.2.7: {}
 
   rolldown@1.0.2:
     dependencies:
@@ -1732,10 +1733,10 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  terminal-simulator@git+https://git@github.com:ntrescoli/terminalsimulator.git#42ada39232aad36c7a123f3e044492ade382c1fa(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
+  terminal-simulator@git+https://git@github.com:ntrescoli/terminalsimulator.git#fd33707145b6e2ad3832700a7dad83bad9eb2c39(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     optionalDependencies:
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
   tinyglobby@0.2.16:
     dependencies:

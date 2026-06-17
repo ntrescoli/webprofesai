@@ -1,5 +1,5 @@
 {
-  "name": "ts-terminal-os",
+  "name": "webprofesai",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.1",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "terminal-simulator": "github:ntrescoli/terminalsimulator"
   },
   "devDependencies": {

@@ -1,7 +1,8 @@
-import React from 'react';
+import { ReactTerminal } from "terminal-simulator";
 
 interface TerminalWidgetProps {
   user: string;
+  ReactTerminal: any; // Asegúrate de importar ReactTerminal correctamente en el archivo donde uses TerminalWidget
 }
 
 export const TerminalWidget = ({ user }: TerminalWidgetProps) => {
@@ -22,26 +23,8 @@ export const TerminalWidget = ({ user }: TerminalWidgetProps) => {
       </div>
 
       {/* Pantalla de comandos */}
-      <div className="flex-1 p-5 font-mono text-sm overflow-y-auto space-y-2 text-distro-text" id="output">
-        <p className="text-slate-400">Welcome to JS-Terminal Virtual OS Environment</p>
-        <p className="text-slate-400">System initialization completed successfully.</p>
-        <p className="text-distro-accent/80">// Tip: Escribe 'help' para listar los comandos simulados disponibles.</p>
-        
-        {/* Línea del Prompt Activo */}
-        <div className="flex items-center space-x-2 pt-2">
-          <span id="prompt" className="text-emerald-400 font-bold shrink-0">
-            {user}@virtual-os:<span className="text-sky-400">~</span>$
-          </span>
-          <input 
-            type="text" 
-            id="terminal-input" 
-            className="flex-1 bg-transparent border-none outline-none text-slate-100 focus:ring-0 p-0 font-mono" 
-            autoFocus 
-            autoComplete="off" 
-            spellCheck="false" 
-          />
-        </div>
-      </div>
+
+      <ReactTerminal />
 
     </div>
   );

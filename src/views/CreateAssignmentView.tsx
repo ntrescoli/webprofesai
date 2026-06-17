@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface CriterioPregunta {
   enunciado: string;
@@ -70,7 +70,7 @@ export const CrearExamenView = ({ onCancel }: { onCancel: () => void }) => {
           </button>
         </div>
 
-        {preguntas.map((p, index) => (
+        {preguntas.map((_, index) => (
           <div key={index} className="bg-distro-header/30 border border-distro-border rounded-xl p-5 space-y-4">
             <div className="flex items-center justify-between text-xs font-mono text-slate-400">
               <span>Item #{(index + 1).toString().padStart(2, '0')}</span>

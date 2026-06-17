@@ -39,13 +39,13 @@ export const DashboardLayout = ({ children, currentView, onNavigate }: Dashboard
             </button>
 
             <button 
-              onClick={() => onNavigate('alumnos')} 
+              onClick={() => onNavigate('grades')} 
               className={`w-full flex items-center space-x-3 px-4 py-2.5 text-sm font-medium rounded-lg transition ${
-                currentView === 'alumnos' ? 'bg-distro-border text-white' : 'text-slate-300 hover:bg-distro-border/50 hover:text-white'
+                currentView === 'grades' ? 'bg-distro-border text-white' : 'text-slate-300 hover:bg-distro-border/50 hover:text-white'
               }`}
             >
               <i className="fa-solid fa-graduation-cap text-distro-accent"></i>
-              <span>Alumnos</span>
+              <span>Grades</span>
             </button>
 
             <button 
@@ -56,6 +56,16 @@ export const DashboardLayout = ({ children, currentView, onNavigate }: Dashboard
             >
               <i className="fa-solid fa-file-code text-distro-accent"></i>
               <span>Exámenes</span>
+            </button>
+
+            <button 
+              onClick={() => onNavigate('cursos')} 
+              className={`w-full flex items-center space-x-3 px-4 py-2.5 text-sm font-medium rounded-lg transition ${
+                currentView === 'cursos' ? 'bg-distro-border text-white' : 'text-slate-300 hover:bg-distro-border/50 hover:text-white'
+              }`}
+            >
+              <i className="fa-solid fa-layer-group text-distro-accent"></i>
+              <span>Cursos</span>
             </button>
 
             {/* BOTÓN VISTA CREAR EXAMEN */}
@@ -70,6 +80,20 @@ export const DashboardLayout = ({ children, currentView, onNavigate }: Dashboard
               >
                 <i className="fa-solid fa-circle-plus"></i>
                 <span>Crear Examen</span>
+              </button>
+            </div>
+
+            <div className="pt-4 mt-4 border-t border-distro-border/50">
+              <button 
+                onClick={() => onNavigate('assignment-login')} 
+                className={`w-full flex items-center space-x-3 px-4 py-2.5 text-sm font-bold rounded-lg transition border border-distro-accent/30 ${
+                  currentView === 'assignment-login' 
+                    ? 'bg-distro-accent text-white border-transparent' 
+                    : 'text-distro-accent hover:bg-distro-accent hover:text-white'
+                }`}
+              >
+                <i className="fa-solid fa-circle-plus"></i>
+                <span>Provisional POV Examen</span>
               </button>
             </div>
           </nav>
